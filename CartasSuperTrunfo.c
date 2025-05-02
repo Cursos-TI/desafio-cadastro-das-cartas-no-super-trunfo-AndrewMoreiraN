@@ -67,10 +67,26 @@ int main() {
 
     printf("Digite o numero de pontos turisticos da segunda carta cidade: ");
     scanf("%d", &numero_de_pontos_turisticos2);
+    
+    // Exibindo os dados da primeira carta cidade
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo_da_carta1);
+    printf("Nome da Cidade: %s\n", nome_da_cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos1);
 
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Exibindo os dados da segunda carta cidade
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo_da_carta2);
+    printf("Nome da Cidade: %s\n", nome_da_cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turisticos: %d\n", numero_de_pontos_turisticos2);
 
     return 0;
 }
