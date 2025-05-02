@@ -7,31 +7,20 @@
 //Teste larissa
 
 int main() {
-    char estado1;
-    char codigo_da_carta1[4];
-    char nome_da_cidade1[50];
-    int populacao1;
-    float area1;
-    float pib1;
-    int numero_de_pontos_turisticos1;
-
-    char estado2;
-    char codigo_da_carta2[3];
-    char nome_da_cidade2[50];
-    int populacao2;
-    float area2;
-    float pib2;
-    int numero_de_pontos_turisticos2;
+    char estado1, estado2;
+    char codigo_da_carta1[50], nome_da_cidade1[50], codigo_da_carta2[50], nome_da_cidade2[50];
+    int populacao1, populacao2, numero_de_pontos_turisticos1, numero_de_pontos_turisticos2;
+    float area1, pib1, area2, pib2;
     
     // Leitura dos dados da primeira carta cidade
     printf("Digite o estado da primeira carta cidade: ");
-    scanf(" %c", &estado1);
+    scanf("%c", &estado1);
 
     printf("Digite o codigo da primeira carta cidade: ");
     scanf("%s", codigo_da_carta1);
 
     printf("Digite o nome da cidade da primeira carta cidade: ");
-    scanf("%[^\n]", nome_da_cidade1);
+    scanf("%s", nome_da_cidade1);
 
     printf("Digite a populacao da primeira carta cidade: ");
     scanf("%d", &populacao1);
@@ -48,13 +37,14 @@ int main() {
     // Leitura dos dados da segunda carta cidade
 
     printf("\nDigite o estado da segunda carta cidade: ");
-    scanf(" %c", &estado2);
-
+    getchar();
+    scanf("%c", &estado2);
+    
     printf("Digite o codigo da segunda carta cidade: ");
     scanf("%s", codigo_da_carta2);
-
+    
     printf("Digite o nome da cidade da segunda carta cidade: ");
-    scanf("%[^\n]", nome_da_cidade2);
+    scanf("%s", nome_da_cidade2);
 
     printf("Digite a populacao da segunda carta cidade: ");
     scanf("%d", &populacao2);
